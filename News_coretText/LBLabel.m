@@ -14,7 +14,6 @@
 {
     self = [super init];
     if (self) {
-        self.backgroundColor = [UIColor whiteColor];
         self.drawModes = [[NSMutableArray alloc]init];
     }
     return self;

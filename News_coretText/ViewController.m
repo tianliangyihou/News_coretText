@@ -47,6 +47,7 @@
     if (_sc.tag == 0) {
         color = [UIColor whiteColor];
     }
+    _sc.backgroundColor = color;
     for (UIView *view in _sc.subviews) {
         if ([view isKindOfClass:[LBLabel class]]) {
             view.backgroundColor = color;

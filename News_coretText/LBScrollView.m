@@ -20,7 +20,7 @@
 {
     self = [super initWithFrame:frame];
     if (self) {
-        self.backgroundColor = [UIColor lightGrayColor];
+        self.backgroundColor = [UIColor whiteColor];
         if ([UIDevice currentDevice].systemVersion.floatValue >11.0) {
             self.contentInsetAdjustmentBehavior = UIScrollViewContentInsetAdjustmentNever;
         }
@@ -42,6 +42,7 @@
     CGPathAddRect(path, NULL, CGRectMake(0.0f, 0.0f, constraints.width, suggestedSize.height));
     CTFrameRef frame = CTFramesetterCreateFrame(frameSetter, CFRangeMake(0, 0), path, NULL);
     LBLabel *textlabel = [[LBLabel alloc]initWithctFrame:frame contentHeight:suggestedSize.height];
+    textlabel.backgroundColor = self.backgroundColor;
     [self attachViewWithFrame:frame models:models label:textlabel];
     textlabel.frame = CGRectMake(0, 0, screenBounds.size.width, suggestedSize.height);
     [self addSubview:textlabel];
@@ -61,6 +62,7 @@
         CGMutablePathRef endPath = CGPathCreateMutableCopy(bPath.CGPath);
         CTFrameRef endFrame = CTFramesetterCreateFrame(endframeSetter, CFRangeMake(0, 0), endPath, NULL);
         LBLabel *endLabel = [[LBLabel alloc]initWithctFrame:endFrame contentHeight:screenBounds.size.width];
+        endLabel.backgroundColor = self.backgroundColor;
         UIImageView *catImageView = [[UIImageView alloc]initWithImage:[UIImage imageNamed:@"cat.jpg"]];
         catImageView.frame = CGRectMake(0, 0,(screenBounds.size.width /2.0 - 35) * 2, (screenBounds.size.width /2.0 - 35) * 2);
         catImageView.center = CGPointMake(screenBounds.size.width /2.0, screenBounds.size.width /2.0);
