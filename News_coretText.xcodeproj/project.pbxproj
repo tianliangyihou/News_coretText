@@ -389,15 +389,16 @@
 			baseConfigurationReference = EA09AD4D0E57895EC31EF0D2 /* Pods-News_coretText.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				CODE_SIGN_STYLE = Manual;
-				DEVELOPMENT_TEAM = M974WD5VWM;
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = News_coretText/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.vcyber.News-coretText";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "44290f65-14f3-4c5a-bce8-f7896707fea4";
-				PROVISIONING_PROFILE_SPECIFIER = CYW_ALL_APP_Development;
+				PROVISIONING_PROFILE = "";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
@@ -407,6 +408,7 @@
 			baseConfigurationReference = DD109B6C3E556B9E859B8419 /* Pods-News_coretText.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				CODE_SIGN_STYLE = Manual;
 				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = News_coretText/Info.plist;
