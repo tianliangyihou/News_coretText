@@ -122,5 +122,4 @@ https://github.com/tianliangyihou/LBPhotoBrowser
         [self addSubview:endLabel];
         CFRelease(endframeSetter);
         CFRelease(endPath);
-
 ```
