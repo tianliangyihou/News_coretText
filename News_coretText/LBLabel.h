@@ -9,6 +9,7 @@
 #import <UIKit/UIKit.h>
 #import <CoreText/CoreText.h>
 #import "LBAnalysis.h"
+
 @interface LBLabel : UIView
 @property (nonatomic , strong)NSMutableArray <LBDrawModel *> *drawModes;
 @property (nonatomic , assign)CTFrameRef ctFrame;
